@@ -11,3 +11,8 @@ sudo apt-get install -y apt-transport-https
 sudo apt-get update
 sudo apt-get install -y dotnet-sdk-6.0
 
+rm /workspaces/quantum-compiler/qrng/Host.cs
+rm /workspaces/quantum-compiler/qrng/Qrng.qs
+mv /workspaces/quantum-compiler/Host.cs /workspaces/quantum-compiler/qrng/
+mv /workspaces/quantum-compiler/Qrng.qs /workspaces/quantum-compiler/qrng/
+
