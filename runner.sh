@@ -1,7 +1,10 @@
-git clone https://github.com/microsoft/Quantum.git
-mv /workspaces/quantum-compiler/Quantum/samples/interoperability/qrng/Host.cs /workspaces/quantum-compiler
-mv /workspaces/quantum-compiler/Quantum/samples/interoperability/qrng/host.py /workspaces/quantum-compiler
-mv /workspaces/quantum-compiler/Quantum/samples/interoperability/qrng/Qrng.csproj /workspaces/quantum-compiler
-mv /workspaces/quantum-compiler/Quantum/samples/interoperability/qrng/Qrng.qs /workspaces/quantum-compiler
-mv /workspaces/quantum-compiler/Quantum/samples/interoperability/qrng/README.md /workspaces/quantum-compiler
-rm -r /workspaces/quantum-compiler/Quantum
+wget https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install -y apt-transport-https
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-6.0
+
+
+dotnet new -i Microsoft.Quantum.ProjectTemplates
+dotnet tool install -g Microsoft.Quantum.IQSharp
