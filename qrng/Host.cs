@@ -1,8 +1,7 @@
-﻿// Copyright (c) Microsoft Corporation.
+// Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
 using System;
-using System.Net;
 using Microsoft.Quantum.Simulation.Core;
 using Microsoft.Quantum.Simulation.Simulators;
 using System.Linq;
@@ -16,9 +15,7 @@ namespace Qrng
             using (var sim = new QuantumSimulator())
             {
                 Console.WriteLine(main.Run(sim).Result);
-                
-                
             }
         }
-    };
+    }
 }
