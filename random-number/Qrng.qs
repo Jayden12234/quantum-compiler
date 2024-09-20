@@ -3,23 +3,19 @@
 namespace Qrng {
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Canon;
+    open Microsoft.Quantum.Convert;
+    open Microsoft.Quantum.Measurement;
     operation main() : Unit {
-        for i in 0..8{
-            Message(i);
-            RandBit_AsInt();
-        }
+        let res = RandBit();
+        
     }
-    operation RandBit_AsInt() : Int{
+    operation RandBit() : Int{
         use Q = Qubit();
-        H(Q); 
-        let res = M(Q);
-        if res == Zero{
-            return 0;
-        } elif  res == One{
-            return 1;
-        }
-        return 0;
+        H(Q);
+        let res = MeasureInteger(Q);
         Reset(Q);
+        return res;
+
     }
     
 }
