@@ -11,4 +11,4 @@
 <b>run<br>cd qrng<br>then open the Qrng.qs file to edit your code then run dotnet run to build and run it<br>Note: it will take some time to build for the first time</b>
 <h2>API Reference</h2>
 <br>
-<b><url https://learn.microsoft.com/en-us/qsharp/api/></b>
+<b>https://learn.microsoft.com/en-us/qsharp/api/</b>
