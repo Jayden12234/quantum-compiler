@@ -9,3 +9,6 @@
 <b>the random number example to run it use dotnet run <br>it will build and run the Qrng.qs file which is Q# program for generating a random number</b>
 <h2>Writing Your Own Code</h2>
 <b>run<br>cd qrng<br>then open the Qrng.qs file to edit your code then run dotnet run to build and run it<br>Note: it will take some time to build for the first time</b>
+<h2>API Reference</h2>
+<br>
+<b>https://learn.microsoft.com/en-us/qsharp/api/</b>
