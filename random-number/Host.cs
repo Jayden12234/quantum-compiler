@@ -4,18 +4,21 @@
 using System;
 using Microsoft.Quantum.Simulation.Core;
 using Microsoft.Quantum.Simulation.Simulators;
-using System.Linq;
-
+using System.Threading.Tasks;
+//importing needed tools
 namespace Qrng
 {
-    class Driver
+    class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            using (var sim = new QuantumSimulator())
+            bool x;
+            using (var sim = new QuantumSimulator())//starting quantum simulator
             {
-                Console.WriteLine(main.Run(sim).Result);
+                x = await main.Run(sim);//runs q# program which returns the value 
+                Console.WriteLine(x);//prints the returned value 
             }
+            
         }
     }
 }
