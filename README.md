@@ -16,7 +16,7 @@
 <b>run<br>cd qrng<br>then open the Qrng.qs file to edit your code then run dotnet run to build and run it<br>Note: it will take some time to build for the first time</b>
 <h2>API Reference/Learning resources</h2>
 <br>
-<b>https://learn.microsoft.com/en-us/qsharp/api/</b>
-<b>https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-explore-entanglement?pivots=ide-azure-copilot</b>#
-<b>https://quantum.ibm.com/composer/</b>
+<b>https://learn.microsoft.com/en-us/qsharp/api/</b><br>
+<b>https://learn.microsoft.com/en-us/azure/quantum/tutorial-qdk-explore-entanglement?pivots=ide-azure-copilot</b><br>
+<b>https://quantum.ibm.com/composer/</b><br>
 <b>https://learning.quantum.ibm.com/course/quantum-computing-in-practice/introduction</b>
