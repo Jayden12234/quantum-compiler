@@ -3,7 +3,7 @@
 <b>this is a tool for compileling MicroSoft Q# programs using DOTNET </b>
 <h2>installation</h2>
 <br>
-<b>clone the repo into a codespace</b>
+<b>clone the repo into a codespace<br></b>
 <b>to build the envioment run <br><p>sh runner.sh</p>you will only need to run this program once so it will delete after running it</b>
 <h2>Random Number example</h2>
 <br>
